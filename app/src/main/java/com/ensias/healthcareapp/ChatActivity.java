@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ensias.healthcareapp.adapter.MessageAdapter;
 import com.ensias.healthcareapp.model.Message;
@@ -23,8 +25,9 @@ public class ChatActivity extends AppCompatActivity {
     private CollectionReference MessageRef1 ;
     private CollectionReference MessageRef2 ;
     private MessageAdapter adapter;
-    private TextInputEditText envoyer;
-    private Button btnEnvoyer;
+    private TextInputEditText sender;
+    private TextView headingTitleTxtView ;
+    private Button btnsender;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,16 +35,26 @@ public class ChatActivity extends AppCompatActivity {
         extras = getIntent().getExtras();
         MessageRef1 = FirebaseFirestore.getInstance().collection("chat").document(extras.getString("key1")).collection("message");
         MessageRef2 = FirebaseFirestore.getInstance().collection("chat").document(extras.getString("key2")).collection("message");
-        envoyer= (TextInputEditText)findViewById(R.id.activity_mentor_chat_message_edit_text);
-        btnEnvoyer= (Button)findViewById(R.id.activity_mentor_chat_send_button);
+        sender= (TextInputEditText)findViewById(R.id.activity_mentor_chat_message_edit_text);
+        btnsender= (Button)findViewById(R.id.activity_mentor_chat_send_button);
+        headingTitleTxtView = findViewById(R.id.headingTitleTxtView) ;
+
+        String messegeNode = extras.getString("key1") ;
+        String messegeNode2 = extras.getString("key2") ;
+        String[] users = messegeNode2.split("_") ;
+        Toast.makeText(getApplicationContext(),users[0] + " " + users[1] , Toast.LENGTH_SHORT).show() ;
+
+        String temp = "messeging between " + messegeNode2 ;
+        headingTitleTxtView.setText(temp) ;
+
         setUpRecyclerView();
-        btnEnvoyer.setOnClickListener(new View.OnClickListener() {
+        btnsender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Message msg = new Message(envoyer.getText().toString(),FirebaseAuth.getInstance().getCurrentUser().getEmail().toString());
+                Message msg = new Message(sender.getText().toString(),FirebaseAuth.getInstance().getCurrentUser().getEmail().toString());
                 MessageRef1.document().set(msg);
                 MessageRef2.document().set(msg);
-                envoyer.setText("");
+                sender.setText("");
             }
         });
     }

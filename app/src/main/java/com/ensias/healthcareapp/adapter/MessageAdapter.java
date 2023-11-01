@@ -31,13 +31,17 @@ public class MessageAdapter extends FirestoreRecyclerAdapter<Message,MessageAdap
            // CoordinatorLayout.LayoutParams  lllp= (CoordinatorLayout.LayoutParams) holder.text.getLayoutParams();
            // lllp.gravity= Gravity.LEFT;
             //holder.text.setLayoutParams(lllp);
-            //holder.text.setBackground(holder.text.getContext().getResources().getDrawable(R.drawable.rounded_message2));
-            holder.text2.setText(model.getMessage());
-            holder.text2.setPadding(35,35,35,35);
-        }
-        else {
+            //
+            // holder.text.setBackground(holder.text.getContext().getResources().getDrawable(R.drawable.rounded_message2));
             holder.text.setText(model.getMessage());
             holder.text.setPadding(35,35,35,35);
+
+        }
+        else {
+
+
+            holder.text2.setText(model.getMessage());
+            holder.text2.setPadding(35,35,35,35);
         }
 
     }

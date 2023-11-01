@@ -87,7 +87,7 @@ public class BookingStep2Fragment extends Fragment implements ITimeSlotLoadListe
                 {
                     DocumentSnapshot documentSnapshot = task.getResult();
                     if(documentSnapshot.exists()){
-                        CollectionReference date =FirebaseFirestore.getInstance()
+                        CollectionReference date = FirebaseFirestore.getInstance()
                                 .collection("Doctor")
                                 .document(Common.CurreentDoctor)
                                 .collection(bookDate);

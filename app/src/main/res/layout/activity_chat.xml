@@ -18,23 +18,31 @@
         android:layout_above="@id/activity_mentor_chat_add_message_container">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#22BEA9">
+            android:layout_height="wrap_content"
+            android:background="#588882"
+            android:orientation="vertical">
             <TextView
+                android:id="@+id/headingTitleTxtView"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="30dp"
+                android:textSize="25dp"
                 android:fontFamily="@font/courgette"
                 android:textColor="#FFFFFF"
-                android:text="Messages" />
+                android:text="Message to someonew" />
+
+
         </LinearLayout>
+
+
         <!-- RECYCLER VIEW -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/activity_mentor_chat_recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+        </androidx.recyclerview.widget.RecyclerView>
 
     </LinearLayout>
 
@@ -54,9 +62,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/activity_mentor_chat_message_edit_text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:inputType="textMultiLine"
-            android:hint="hint" />
+            android:hint="type messeges " />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- ADD MESSAGE BUTTON -->
@@ -65,7 +73,9 @@
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_title_mentor_chat_activity" />
+            android:text="send" >
+
+        </Button>
 
     </LinearLayout>
 

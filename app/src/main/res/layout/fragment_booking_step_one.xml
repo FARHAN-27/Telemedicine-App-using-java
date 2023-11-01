@@ -26,7 +26,7 @@
     <Spinner
         android:id="@+id/spinnerBooking"
         android:layout_width="299dp"
-        android:layout_height="46dp"
+        android:layout_height="50dp"
 
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
