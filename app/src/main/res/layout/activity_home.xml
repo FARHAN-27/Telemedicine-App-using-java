@@ -48,87 +48,197 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnRequst"
-        android:layout_width="105dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginBottom="237dp"
-        android:background="@drawable/button_home"
-        android:text="Medical Folder"
-        android:textColor="#22BE87"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.626" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="300dp">
 
-    <Button
-        android:id="@+id/myDoctors"
-        android:layout_width="105dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="43dp"
-        android:background="@drawable/button_home"
-        android:text="My Doctors"
-        android:textColor="#22BE87"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.859"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
 
-    <Button
-        android:id="@+id/appointement2"
-        android:layout_width="105dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginBottom="98dp"
-        android:background="@drawable/button_home"
-        android:text="Appointement"
-        android:textColor="#22BE87"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.673"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.671" />
+        <Button
+            android:id="@+id/btnRequst"
+            android:layout_width="105dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/button_home"
+            android:text="Medical Folder"
+            android:textColor="#22BE87"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.626" />
 
-    <Button
-        android:id="@+id/profile"
-        android:layout_width="105dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginBottom="98dp"
-        android:background="@drawable/button_home"
-        android:text="Profile"
-        android:textColor="#22BE87"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.241"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.671" />
+        <Button
+                android:id="@+id/myDoctors"
+                android:layout_width="105dp"
+                android:layout_height="96dp"
+                android:background="@drawable/button_home"
+                android:text="My Doctors"
+                android:textColor="#22BE87"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.859"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
 
-    <Button
-        android:id="@+id/searchBtn"
-        android:layout_width="105dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginBottom="237dp"
-        android:background="@drawable/button_home"
-        android:text="Search"
-        android:textColor="#22BE87"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.626" />
+
+            <Button
+                android:id="@+id/appointement2"
+                android:layout_width="105dp"
+                android:layout_height="96dp"
+                android:background="@drawable/button_home"
+                android:text="Appointement"
+                android:textColor="#22BE87"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.673"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintVertical_bias="0.671"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="450dp">
+
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="105dp"
+                android:layout_height="96dp"
+                android:background="@drawable/button_home"
+                android:text="Profile"
+                android:textColor="#22BE87"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.241"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintVertical_bias="0.671"
+                android:layout_marginLeft="60dp"/>
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="105dp"
+                android:layout_height="96dp"
+                android:background="@drawable/button_home"
+                android:text="Search"
+                android:textColor="#22BE87"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.084"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintVertical_bias="0.626"
+                android:layout_marginLeft="60dp"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnRequst"-->
+<!--        android:layout_width="105dp"-->
+<!--        android:layout_height="96dp"-->
+<!--        android:layout_marginTop="81dp"-->
+<!--        android:layout_marginBottom="237dp"-->
+<!--        android:background="@drawable/button_home"-->
+<!--        android:text="Medical Folder"-->
+<!--        android:textColor="#22BE87"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.47"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view"-->
+<!--        app:layout_constraintVertical_bias="0.626" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/myDoctors"-->
+<!--        android:layout_width="105dp"-->
+<!--        android:layout_height="96dp"-->
+<!--        android:layout_marginTop="43dp"-->
+<!--        android:background="@drawable/button_home"-->
+<!--        android:text="My Doctors"-->
+<!--        android:textColor="#22BE87"-->
+<!--        android:textSize="13sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.859"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/appointement2"-->
+<!--        android:layout_width="105dp"-->
+<!--        android:layout_height="96dp"-->
+<!--        android:layout_marginTop="220dp"-->
+<!--        android:layout_marginBottom="98dp"-->
+<!--        android:background="@drawable/button_home"-->
+<!--        android:text="Appointement"-->
+<!--        android:textColor="#22BE87"-->
+<!--        android:textSize="13sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.673"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view"-->
+<!--        app:layout_constraintVertical_bias="0.671" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/profile"-->
+<!--        android:layout_width="105dp"-->
+<!--        android:layout_height="96dp"-->
+<!--        android:layout_marginTop="220dp"-->
+<!--        android:layout_marginBottom="98dp"-->
+<!--        android:background="@drawable/button_home"-->
+<!--        android:text="Profile"-->
+<!--        android:textColor="#22BE87"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.241"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view"-->
+<!--        app:layout_constraintVertical_bias="0.671" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/searchBtn"-->
+<!--        android:layout_width="105dp"-->
+<!--        android:layout_height="96dp"-->
+<!--        android:layout_marginTop="81dp"-->
+<!--        android:layout_marginBottom="237dp"-->
+<!--        android:background="@drawable/button_home"-->
+<!--        android:text="Search"-->
+<!--        android:textColor="#22BE87"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.084"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view"-->
+<!--        app:layout_constraintVertical_bias="0.626" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
