@@ -30,10 +30,6 @@ public class FirstSigninActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_signin);
-        btn = (Button) findViewById(R.id.confirmeBtn);
-        fullName = (EditText) findViewById(R.id.firstSignFullName);
-        birthday = (EditText) findViewById(R.id.firstSignBirthDay);
-        teL = (EditText) findViewById(R.id.firstSignTel);
 
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
